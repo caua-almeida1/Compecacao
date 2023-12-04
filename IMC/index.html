@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Calculo de IMC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="rect-left">
+            <img src="./img/image 2 (1).svg" alt="">
+        </div>
+        
+        <div class="contentText">
+            <h1>Calculo de IMC</h1>
+            <p>Bem-vindo ao nosso app de IMC! Calcule seu Índice de Massa Corporal rapidamente e monitore sua jornada para uma vida mais saudável. Estamos aqui para apoiar seus objetivos de bem-estar!</p>
+
+            <div class="inputs">
+                <input id="altura" type="number" placeholder="Digite sua altura">
+                <input id="peso" type="number" placeholder="Digite seu peso">
+            </div>
+
+            <div class="buttonResult">
+                <button onclick="calcularIMC()">Calcular!</button>
+                <div class="imcResult">IMC: 0.0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

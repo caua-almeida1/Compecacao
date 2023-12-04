@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'myFontRegular';
+    src: url(../IMC/fonts/inter/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'myFontBold';
+    src: url(../IMC/fonts/inter/Inter-Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+
+.container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+
+.rect-left{
+    background-color: #2B8763;
+    width: 70px;
+    height: 1080px;
+}
+
+.rect-left img{
+    position: absolute;
+    top: 20%;
+    width: 350px;
+    left: 2%;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+.contentText{
+    justify-content: center;
+    max-width: 420px;
+    position: absolute;
+    top: 23%;
+    right: 20%;
+    animation: slideOp 1.5s ease-in-out;
+}
+
+.contentText h1{
+    font-family: 'myFontBold';
+    color: #3E3E3E;
+    font-size: 40px;
+}
+
+.contentText p{
+    font-family: 'myFontRegular';
+    font-size: 15px;
+    max-width: 500px;
+    color: #3E3E3E;
+    margin-top: 20px;
+}
+
+.inputs{
+    margin-top: 10px;
+}
+
+input{
+    width: 420px;
+    height: 55px;
+    border-radius: 50px;
+    padding-left: 10px;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    background-color: #E6E6E6;
+}
+
+.buttonResult{
+    display: flex;
+    margin-top: 40px;
+}
+
+button{
+    width: 170px;
+    margin-right: 50px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-family: 'myFontBold';
+    background-color: #2B8763;
+    color: #fff;
+    cursor: pointer;
+}
+
+.imcResult{
+    width: 200px;
+    padding: 17px;
+    background-color: #F0537C;
+    text-align: center;
+    border-radius: 50px;
+    font-family: 'myFontBold';
+    color: #fff;
+    cursor: default;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideOp {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+
+
+
