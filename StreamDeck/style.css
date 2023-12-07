@@ -1,0 +1,51 @@
+@font-face {
+    font-family: 'myFontRegular';
+    src: url(./Inter-Medium.ttf);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #4a4a4a;
+    font-family: 'myFontRegular';
+}
+
+#stream-deck {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 600px;
+}
+
+.deck-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to bottom, #4e6e8e, #394f6d);
+    border: 1px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.deck-button:hover {
+    background: linear-gradient(to bottom, #394f6d, #4e6e8e);
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.deck-button img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 8px;
+}
